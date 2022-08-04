@@ -18,7 +18,7 @@
 <h2>Installation</h2>
 <pre>npm i discord-emojiquiz</pre>
 <h2>Examples</h2>
-<p>If you need help you can go to: <a href="https://github.com/JeezyDev/discord-emojiquiz">discord-emojiquiz-bot</a></p>
+<p>If you need help you can go to: <a href="https://github.com/JeezyDev/discord-emojiquiz-bot">discord-emojiquiz-bot</a></p>
 <h2>Required Discord Intents</h2>
 <br>
 
