@@ -1,0 +1,28 @@
+{
+  "name": "discord-emojiquiz",
+  "version": "1.0.0",
+  "description": " Complete framework to facilitate the creation of emojiquizzes using discord.js! 🥳🤳👀",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeezyDev/discord-emojiquiz.git"
+  },
+  "keywords": [
+    "Discord",
+    "emojiquiz",
+    "discord-emojiquiz",
+    "quiz",
+    "emoji"
+  ],
+  "author": "JezzyDevelopment",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "discord.js": "^14.1.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
