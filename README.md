@@ -75,7 +75,7 @@ module.exports = {
   <li>(!IMPORTANT!) Import variable from before into ready.js and do emojiquiz.ready();</li>
 </ul>
 
-<h2>CeateEmojiQuiz</h2>
+<h2>CreateEmojiQuiz</h2>
 
 ```javascript
 
