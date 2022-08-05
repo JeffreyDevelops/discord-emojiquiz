@@ -66,7 +66,7 @@ module.exports = {
 		emojiquiz.ready();
 
 		console.log(`Ready! Logged in as ${client.user.tag}`);
-	},
+	}
 };
 
 ```
@@ -106,7 +106,7 @@ module.exports = {
       emojiquiz.hint = emoji_hint;
       emojiquiz.searched_word = searched_word;
       emojiquiz.createEmojiQuiz();
-    },
+    }
   };
 
 ```
@@ -137,7 +137,7 @@ module.exports = {
 		emojiquiz.interaction = interaction;
 		emojiquiz.delete = emojiquiz_delete;
 		emojiquiz.deleteEmojiQuiz();
-		},
+		}
 	};
 
 ```
@@ -174,7 +174,7 @@ module.exports = {
           emojiquiz.channel = emojiquiz_channel;
           emojiquiz.interaction = interaction;
           emojiquiz.setup();
-    },
+    }
   };
 
 ```
