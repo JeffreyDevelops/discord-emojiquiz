@@ -18,7 +18,7 @@
 <h2>Installation</h2>
 <pre>npm i discord-emojiquiz</pre>
 <h2>Examples / Images </h2>
-<p>If you need <code>examples</code> you can go to: <a href="https://github.com/JeezyDev/discord-emojiquiz-bot">discord-emojiquiz-bot</a></p>
+<p>If you need an <code>example</code> you can go to: <a href="https://github.com/JeezyDev/discord-emojiquiz-bot">discord-emojiquiz-bot</a></p>
 <img src="https://user-images.githubusercontent.com/88632169/182975493-44e56018-e0e5-4031-baf3-bf31689e6db3.png">
 <img src="https://user-images.githubusercontent.com/88632169/182975535-2d3dec2e-d621-43d3-93ec-a4662d70e192.png">
 
