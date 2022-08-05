@@ -45,7 +45,7 @@ module.exports = {emojiquiz};
 
 <ul>
   <li>Require discord-emojiquiz</li>
-  <li>Make a new instance for Emojiquiz</li>
+  <li>Make a new instance of Emojiquiz</li>
   <li>Set DB details</li>
   <li>Export new instance variable (emojiquiz)</li>
 </ul>
@@ -69,7 +69,7 @@ module.exports = {
 ```
 
 <ul>
-  <li>(!IMPORTANT!) Import variable from before into ready.js and do emojiquiz.ready();/li>
+  <li>(!IMPORTANT!) Import variable from before into ready.js and do emojiquiz.ready();</li>
 </ul>
 
 <h2>CeateEmojiQuiz</h2>
@@ -145,7 +145,7 @@ module.exports = {
 ```
 
 <ul>
-  <li>Set emojiquiz.interaction</li>
+  <li>Set emojiquiz.interaction && emojiquiz.pending_channel && emojiquiz.channel</li>
   <li>After that do emojiquiz.setup();</li>
 </ul>
 
@@ -195,7 +195,7 @@ module.exports = {
 
 <h2>Configurate messages</h2>
 
-<p>Before we come to the configuration part you need to make sure that you require { emojiquizContent } in the file where 
+<p>(!IMPORTANT!) Before we come to the configuration part you need to make sure that you require { emojiquizContent } in the file where 
 you call the emojiquiz.start() methode.
 </p>
 
