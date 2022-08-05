@@ -122,21 +122,21 @@ module.exports = {
 
 ```javascript
 
-	const { SlashCommandBuilder } = require('discord.js');
-	const { emojiquiz } = require('../db.js');
+const { SlashCommandBuilder } = require('discord.js');
+const { emojiquiz } = require('../db.js');
 	module.exports = {
-		data: new SlashCommandBuilder()
-	    .setName('emojiquiz-delete')
-	    .setDescription('Finds and deletes emojiquiz out of the db.')
-	    .addStringOption(option =>
+	data: new SlashCommandBuilder()
+	.setName('emojiquiz-delete')
+	.setDescription('Finds and deletes emojiquiz out of the db.')
+	.addStringOption(option =>
 	    option.setName('emoji')
 	    .setDescription('Enter the emoji.')
 	    .setRequired(true)),
-		async execute(interaction) {
-		const emojiquiz_delete = await interaction.options.getString('emoji');
-		emojiquiz.interaction = interaction;
-		emojiquiz.delete = emojiquiz_delete;
-		emojiquiz.deleteEmojiQuiz();
+	async execute(interaction) {
+	const emojiquiz_delete = await interaction.options.getString('emoji');
+	emojiquiz.interaction = interaction;
+	emojiquiz.delete = emojiquiz_delete;
+	emojiquiz.deleteEmojiQuiz();
 		}
 	};
 
@@ -146,6 +146,31 @@ module.exports = {
   <li>Import emojiquiz again</li>
   <li>Set emojiquiz.interaction && emojiquiz.delete</li>
   <li>After that do emojiquiz.deleteEmojiQuiz();
+</ul>
+
+
+<h2>ResetEmojiQuiz</h2>
+
+```javascript
+
+const { SlashCommandBuilder } = require('discord.js');
+const { emojiquiz } = require('../db.js');
+module.exports = {
+	data: new SlashCommandBuilder()
+	 .setName('emojiquiz-reset')
+	 .setDescription('Resets the whole bot to 0.'),
+	async execute(interaction) {
+        emojiquiz.interaction = interaction;
+        emojiquiz.resetEmojiQuiz();
+	}
+};
+
+```
+
+<ul>
+  <li>Import emojiquiz again</li>
+  <li>Set emojiquiz.interaction</li>
+  <li>After that do emojiquiz.resetEmojiQuiz();
 </ul>
 
 
