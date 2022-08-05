@@ -1,7 +1,7 @@
 {
   "name": "discord-emojiquiz",
   "version": "1.0.0",
-  "description": " Complete framework to facilitate the creation of emojiquizzes using discord.js! 🥳🤳👀",
+  "description": "Complete framework to facilitate the creation of emojiquizzes using discord.js! 🥳🤳👀",
   "main": "index.js",
   "scripts": {
     "start": "nodemon"
