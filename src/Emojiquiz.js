@@ -158,6 +158,25 @@ module.exports = class Emojiquiz {
             });
     }
 
+    resetEmojiQuiz() {
+        let get_interaction = this.interaction;
+        let emojiquiz_delete = `DELETE FROM emojiquiz WHERE guildID = ${this.interaction.guildId}`;
+        this.connection.query(emojiquiz_delete, function (err, data, result) {
+        var row_nod;
+        Object.keys(data).forEach(function(key) {
+        row_nod = data[key];
+        });
+        const make_a = async function() {
+            try {
+                await get_interaction.reply({content: "You successfully reseted the bot. ✅", ephemeral: true});
+            } catch (error) {
+                return;
+            }
+        }
+        make_a();
+        });
+    }
+
     setup() {
         let get_connection = this.connection;
         let get_interaction = this.interaction;
