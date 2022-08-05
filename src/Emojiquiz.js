@@ -280,7 +280,16 @@ module.exports = class Emojiquiz {
             let get_current_emoji = row_nod.currentEmoji;
             let new_get_searched_word = get_searched_word.find(e => e.word === get_current_emoji);
 			if (new_get_searched_word.searched.toLowerCase() === get_message.content.toLowerCase()) {
-			get_message_content.react(emojiquizContent.word_reaction.right_word);
+            
+                const make_a = async function() {
+                    try {
+                    await get_message_content.react(emojiquizContent.word_reaction.right_word); 
+                } catch (error) {
+                    return;
+                }
+                }
+                make_a();
+            
 			let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE ${get_message.guildId}`;
             get_connection.query(get_emojiquiz2, function (err, data, result) {
 				var row_nod2;
@@ -326,7 +335,17 @@ module.exports = class Emojiquiz {
         make_a();
 		});
 			} else {
-				get_message_content.react(emojiquizContent.word_reaction.wrong_word);
+                
+                    const make_a = async function() {
+                        try {
+                        await get_message_content.react(emojiquizContent.word_reaction.wrong_word);
+                    } catch (error) {
+                        return;
+                    }
+                    }
+                    make_a();
+               
+				
 			}
 		}
 
