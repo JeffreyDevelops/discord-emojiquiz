@@ -1,6 +1,6 @@
 {
   "name": "discord-emojiquiz",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Complete framework to facilitate the creation of emojiquizzes using discord.js! 🥳🤳👀",
   "main": "index.js",
   "scripts": {
