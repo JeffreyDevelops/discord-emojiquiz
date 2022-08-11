@@ -96,7 +96,7 @@ module.exports = class Emojiquiz {
                     get_connection.query(getinfo, function (err, data, result) {
                     });  
                 } else {
-                    let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE ${get_interaction.guildId}`;
+                    let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE guildID = ${get_interaction.guildId}`;
                     get_connection.query(get_emojiquiz2, function (err, data, result) {
                     var row_nod2;
                     Object.keys(data).forEach(function(key) {
@@ -587,7 +587,7 @@ module.exports = class Emojiquiz {
                 return;  
             };
             const make_a = async function() {
-                let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE ${get_button.guildId}`;
+                let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE guildID = ${get_button.guildId}`;
                       get_connection.query(get_emojiquiz2, function (err, data, result) {
                       var row_nod;
                       Object.keys(data).forEach(function(key) {
@@ -633,7 +633,7 @@ module.exports = class Emojiquiz {
                 return;  
             };
             const make_a = async function() {
-                let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE ${get_button.guildId}`;
+                let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE guildID = ${get_button.guildId}`;
                       get_connection.query(get_emojiquiz2, function (err, data, result) {
                       var row_nod;
                       Object.keys(data).forEach(function(key) {
@@ -734,7 +734,7 @@ module.exports = class Emojiquiz {
                       const emoji_word_response = get_button.fields.getTextInputValue('emoji_word_input');
                       const hint_word_response = get_button.fields.getTextInputValue('hint_word_input');
                       const searched_word_response = get_button.fields.getTextInputValue('searched_word_input');
-                      let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE ${get_button.guildId}`;
+                      let get_emojiquiz2 = `SELECT * FROM emojiquiz WHERE guildID = ${get_button.guildId}`;
                       get_connection.query(get_emojiquiz2, function (err, data, result) {
                       var row_nod;
                       Object.keys(data).forEach(function(key) {
