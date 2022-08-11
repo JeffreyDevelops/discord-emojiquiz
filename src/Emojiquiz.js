@@ -543,7 +543,7 @@ module.exports = class Emojiquiz {
         let get_button = this.button;
         if (get_button.isButton()) {
         if (this.button.customId === 'first_letter') {
-        let get_emojiquiz = `SELECT * FROM emojiquiz WHERE ${this.button.guildId}`;
+        let get_emojiquiz = `SELECT * FROM emojiquiz WHERE guildID = ${this.button.guildId}`;
             this.connection.query(get_emojiquiz, function (err, data, result) {
 			var row_nod;
 			Object.keys(data).forEach(function(key) {
